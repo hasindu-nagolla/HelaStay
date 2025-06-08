@@ -8,5 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss(),
     // Add any other plugins you need here
+    // Example: vitePlugin(),    
   ],
 })
