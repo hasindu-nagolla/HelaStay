@@ -7,7 +7,5 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    // Add any other plugins you need here
-    // Example: vitePlugin(),    
   ],
 })
