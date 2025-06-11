@@ -127,18 +127,19 @@ export const userDummyData = {
     ]
 }
 
-// Hotel Dummy Data
+// Hotel Dummy Data (Sri Lankan Version)
 export const hotelDummyData = {
     "_id": "67f76393197ac559e4089b72",
-    "name": "Urbanza Suites",
-    "address": "Main Road  123 Street , 23 Colony",
-    "contact": "+0123456789",
-    "owner": userDummyData,
-    "city": "New York",
+    "name": "Serenity Lake Resort",
+    "address": "No. 45, Kandy Road, Nuwara Eliya",
+    "contact": "+94771234567",
+    "owner": userDummyData,  // Assuming userDummyData is defined elsewhere
+    "city": "Nuwara Eliya",
     "createdAt": "2025-04-10T06:22:11.663Z",
     "updatedAt": "2025-04-10T06:22:11.663Z",
     "__v": 0
 }
+
 
 // Rooms Dummy Data
 export const roomsDummyData = [
