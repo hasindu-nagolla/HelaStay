@@ -11,11 +11,11 @@ const Hero = () => {
         The Ultimate Hotel Experience
       </p>
       <h1 className="font-playfair text-2xl md:text-5xl md:text-[50px] md:leading-[56px] font-bold md:font-extrabold max-w-xl mt-4">
-        Discover Your Perfect Gateway Destinations
+        Discover Your Dream Getaway in Sri Lanka
       </h1>
       <p className="max-w-130 mt-2 text-sm md:text-base">
-        Unparalleled luxury and comfort await at the world's most exclusive
-        hotels and resorts. Start your journey today.
+        Unwind in the heart of paradise, where luxury meets serenity — from
+        misty hills to sun-kissed beaches. Start your island escape today.
       </p>
 
       <form className="bg-white text-gray-500 rounded-lg px-6 py-4 mt-8 flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto">
