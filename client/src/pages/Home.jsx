@@ -4,11 +4,16 @@ import FeaturedDestinations from '../components/FeaturedDestinations'
 import ExclusiveOffers from '../components/ExclusiveOffers'
 
 const Home = () => {
+  
   return (
     <>
+
+
       <Hero />
       <FeaturedDestinations />
       <ExclusiveOffers />
+
+
     </>
   )
 }
