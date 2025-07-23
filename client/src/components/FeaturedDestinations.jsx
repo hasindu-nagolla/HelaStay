@@ -29,7 +29,6 @@ const FeaturedDestinations = () => {
       >
         View All Destinations
       </button>
-      
     </div>
   );
 };
