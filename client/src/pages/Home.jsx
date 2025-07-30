@@ -2,6 +2,8 @@ import React from "react";
 import Hero from "../components/Hero";
 import FeaturedDestinations from "../components/FeaturedDestinations";
 import ExclusiveOffers from "../components/ExclusiveOffers";
+import Testimonial from "../components/Testimonial";
+import NewsLetter from "../components/NewsLetter";
 
 const Home = () => {
   return (
@@ -9,6 +11,8 @@ const Home = () => {
       <Hero />
       <FeaturedDestinations />
       <ExclusiveOffers />
+      <Testimonial />
+      <NewsLetter />
     </>
   );
 };
