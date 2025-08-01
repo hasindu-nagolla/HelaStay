@@ -1,16 +1,56 @@
 import React from "react";
+import { assets, roomsDummyData } from "../assets/assets";
+import { useNavigate } from "react-router-dom";
+import StarRating from "../components/StarRating";
 
 const AllRooms = () => {
+  const navigate = useNavigate();
+
   return (
-    <div className="flex flex-col-reverse lg:fles-row items-start justify-between pt-28 md:pt-35 px-4 md:px-16 lg:px-24">
+    <div className="flex flex-col-reverse lg:fles-row items-start justify-between pt-28 md:pt-35 px-4 md:px-16 lg:px-24 xl:px-32">
       <div>
-        <div>
-          <h1>Hotel Rooms</h1>
-          <p>
+        <div className="flex flex-col items-start text-left">
+          <h1 className="font-playfair text-4xl md:text-[40px]">Hotel Rooms</h1>
+          <p className="text-sm md:text-base text-gray-500/90 mt-2 max-w-174">
             take advantage of our limited time offers and special pkgs to enhnce
             ur sty and create infrogotble memos
           </p>
         </div>
+
+        {roomsDummyData.map((room) => (
+          <div>
+            <img
+              src={room.images[0]}
+              alt="hotel-img"
+              title="View room details"
+              className="max-h-65 md:w-1/2 rounded-xl shadow-lg object-cover cursor-pointer"
+              onClick={() => {
+                navigate(`/rooms/${room._id}`);
+                scrollTo(0, 0);
+              }}
+            />
+            <div>
+              <p className="text-gray-500">{room.hotel.city}</p>
+              <p
+                className="text-gray-800 text-3xl font-playfair cursor-pointer"
+                onClick={() => {
+                  navigate(`/rooms/${room._id}`);
+                  scrollTo(0, 0);
+                }}
+              >
+                {room.hotel.name}
+              </p>
+              <div className="flex items-center">
+                <StarRating />
+                <p className="ml-2"> 200+ reviews</p>
+              </div>
+              <div className="flex items-center gap-1 text-gray-500 mt-2 text-sm">
+                <img src={assets.linkendinIcon} alt="location-icon" />
+                <span>{room.hotel.address}</span>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
       {/* Filters */}
       <div></div>
